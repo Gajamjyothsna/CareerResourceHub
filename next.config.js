@@ -1,10 +1,11 @@
 // next.config.js
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // ✅ ensures static export for GitHub Pages
-  basePath: '/CareerResourceHub', // ✅ repo name
+  output: 'export',  // ✅ for static export
+  basePath: '/CareerResourceHub',  // ✅ GitHub repo name
+  assetPrefix: '/CareerResourceHub/', // ✅ ensures assets load from correct path
   images: {
-    unoptimized: true, // ✅ disable Next.js image optimization
+    unoptimized: true, // disable Next.js Image Optimization
   },
   experimental: {
     serverActions: {
